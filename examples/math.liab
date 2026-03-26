@@ -1,0 +1,21 @@
+// LIAB Example: math.liab
+// Demonstrates float arithmetic, division, and nested expressions.
+
+let pi = 3.14;
+let radius = 5;
+
+// Area of a circle: π * r²
+let area = pi * radius * radius;
+print area;
+
+// Division
+let half = area / 2;
+print half;
+
+// Nested parentheses
+let result = (10 + 20) * (30 - 15) / 3;
+print result;
+
+// Negative number via unary minus
+let neg = -42;
+print neg;

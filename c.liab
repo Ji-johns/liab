@@ -1,0 +1,3 @@
+let secret = 42;
+export secret;
+let hidden = 99;

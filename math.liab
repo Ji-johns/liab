@@ -1,0 +1,6 @@
+let pi = 3.14;
+fn add(a, b) {
+    return a + b;
+}
+export pi;
+export add;

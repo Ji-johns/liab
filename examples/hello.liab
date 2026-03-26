@@ -1,0 +1,15 @@
+// LIAB Example: hello.liab
+// Demonstrates variable declarations, arithmetic, and print.
+
+let x = 10;
+let y = 20;
+
+// Addition
+let sum = x + y;
+print sum;
+
+// Complex expression with precedence
+print x * y - 5;
+
+// Parenthesised expression
+print (x + y) * 2;

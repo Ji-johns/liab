@@ -1,0 +1,5 @@
+[package]
+name = "liab"
+version = "0.3.0"
+edition = "2021"
+description = "LIAB (Love Is A Bitch) — a deterministic, Rust-native glue language"

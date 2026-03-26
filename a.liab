@@ -1,0 +1,3 @@
+love "b";
+let my_a = 1;
+export my_a;

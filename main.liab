@@ -1,0 +1,99 @@
+love "math_utils";
+
+print "=== LIAB COMPLEX PROGRAM START ===";
+
+fn sum_of_squares(n) {
+    let i = 1;
+    let total = 0;
+
+    while i <= n {
+        total = total + math_utils.square(i);
+        i = i + 1;
+    }
+
+    return total;
+}
+
+fn sum_of_cubes(n) {
+    let i = 1;
+    let total = 0;
+
+    while i <= n {
+        total = total + math_utils.cube(i);
+        i = i + 1;
+    }
+
+    return total;
+}
+
+fn analyze_number(n) {
+    print "Analyzing number:";
+    print n;
+
+    print "Square:";
+    print math_utils.square(n);
+
+    print "Cube:";
+    print math_utils.cube(n);
+
+    print "Factorial:";
+    print math_utils.factorial(n);
+
+    print "Fibonacci:";
+    print math_utils.fibonacci(n);
+}
+
+let number = 5;
+
+print "--------------------";
+analyze_number(number);
+
+print "--------------------";
+print "Sum of squares:";
+print sum_of_squares(number);
+
+print "--------------------";
+print "Sum of cubes:";
+print sum_of_cubes(number);
+
+print "--------------------";
+print "Loop demonstration:";
+
+// Helper: LIAB uses f64 so (i/2)*2 == i doesn't work for parity.
+// Subtract 2 repeatedly until remainder is 0 (even) or 1 (odd).
+fn is_even(n) {
+    let rem = n;
+    while rem > 1 {
+        rem = rem - 2;
+    }
+    if rem == 0 {
+        return true;
+    }
+    return false;
+}
+
+let i = 1;
+
+while i <= number {
+    if is_even(i) {
+        print "Even number:";
+        print i;
+    } else {
+        print "Odd number:";
+        print i;
+    }
+
+    i = i + 1;
+}
+
+print "--------------------";
+print "Nested function calls:";
+
+fn complex_calc(x) {
+    return math_utils.square(x) + math_utils.cube(x);
+}
+
+print complex_calc(3);
+
+print "--------------------";
+print "=== LIAB PROGRAM END ===";
